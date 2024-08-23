@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/img/Logo2.png" alt="Logo de Alura">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main class="contenido">
+        <section class="principal">
+            <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="informacion">
+                <img src="/img/bi_exclamation-circle-fill2.png" alt="">
+                <p class="restricciones">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="validarTexto('encriptar')">Encriptar</button>
+                <button class="btn-desencriptar" onclick="validarTexto('desencriptar')">Desencriptar</button>
+            </div>
+
+        </section>
+        <section class="mensaje-desencriptado">
+            <img class="imagen-alerta" src="/img/Alerta.png"
+                alt="simbolo de alerta color rojo dentro de un circulo gris">
+            <p class="alerta">Ningún mensaje fue encontrado</p>
+            <p class="instrucciones">Ingresa el texto que quieres encriptar o desencriptar</p>
+            <textarea class="mensaje"></textarea>
+
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            <p class="mensaje-copiado">¡Mensaje Copiado!</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>"Encriptador de texto" © Desarrollado por Sai Eli Sanchez</p>
+    </footer>
+    <script src="/javascript.js"></script>
+</body>
+
+</html>
